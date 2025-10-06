@@ -12,7 +12,7 @@ This project demonstrates a basic front-end online shopping application implemen
 * **Sort by Price:** Sorts the items currently in the cart by price (ascending).
 * **User Feedback:** Provides temporary, contextual feedback messages (e.g., "Item added," "Cart cleared").
 
-## Technologies Used 🛠️
+## Technologies Used 
 
 * **HTML5** (Structure)
 * **CSS3** (Basic styling and layout using Flexbox)
