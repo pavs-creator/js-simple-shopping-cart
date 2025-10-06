@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Application</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: azure;
+        }
+        h1 {
+            text-align: center;
+        }
+        .online-shopping-container {
+            max-width: 800px;
+            background-color: white;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgb(189, 188, 188);
+        }
+        .product-row {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            align-items: center;
+            margin: 10px;
+        }
+        button {
+            background-color: blue;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(2, 2, 56);
+        }
+        h2 {
+            margin: 10px 0;
+        }
+        #feedback {
+            text-align: right;
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            background-color: white;
+            padding: 10px;
+            display: none;
+            color: white;
+        }
+        #totalPrice {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="online-shopping-container">
+        <h1>Online Shopping</h1>
+        <p id="feedback"></p>
+
+        <h2>Available Products</h2>
+        <div id="productContainer"></div>
+
+        <h2>My Cart</h2>
+        <div id="cartContainer"></div>
+        <h2 id="totalPrice">Rs.0</h2>
+
+        <h2>Actions</h2>
+        <button id="sortByPrice">Sort by Price</button>
+        <button id="clearCart">Clear Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
